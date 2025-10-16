@@ -77,7 +77,7 @@ class TestBooksCollector:
         collector.delete_book_from_favorites('Марсианин')
         assert 'Гамлет' not in collector.get_list_of_favorites_books()
 
-    @pytest.mark.parametrize('books', 'genre' [('Марсианин', 'Фантастика'),
+    @pytest.mark.parametrize('books, genre', [('Марсианин', 'Фантастика'),
                                                ('Оно', 'Ужасы'),
                                                ('Девы', 'Детективы'),
                                                ('Шрэк', 'Мультфильмы'),
