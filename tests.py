@@ -67,7 +67,7 @@ class TestBooksCollector:
         collector = BooksCollector()
         collector.add_new_book('Марсианин')
         collector.add_book_in_favorites('Марсианин')
-        assert 'Гамлет' in collector.get_list_of_favorites_books()
+        assert 'Марсианин' in collector.get_list_of_favorites_books()
 
     def test_add_duplicate_book_in_favorites(self):
         collector = BooksCollector()
