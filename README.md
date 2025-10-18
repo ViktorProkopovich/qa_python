@@ -28,26 +28,29 @@ _Класс **BooksCollector** содержит:_
 1. *Test_add_new_book_length_more_40*
     - Название книги может содержать максимум 40 символов.
 
-2. *test_set_and_get_book_genere*
-    - Установка жанра и возврат жанра книги.
-    
-3. *test_get_books_with_specific*
+2. *test_set_book_genere*
+    - Устанавливает жанра книге.
+
+3. *test_get_book_genere*   
+    - Выводит установленый жанр книге.
+
+4. *test_get_books_with_specific*
     - Выводит список книг с определённым жанром. 
 
-4. *test_get_books_genre*
+5. *test_get_books_genre*
     - Выводит текущий словарь *books_genre*.
 
-5. *get_books_for_children*
+6. *get_books_for_children*
     - Возвращает книги, которые подходят детям.
 
-6.  *test_add_book_in_favorites*
+7.  *test_add_book_in_favorites*
     - Добавляет книгу в избранное. 
 
-7. *test_add_duplicate_book_in_favorites*
+8. *test_add_duplicate_book_in_favorites*
     - Повторно добавить книгу в избранное нельзя.
 
-8. *test_delete_book_from_favorite*
+9. *test_delete_book_from_favorite*
     - Удаляет книгу из избранного, если она там есть.
 
-9. *test_get_list_of_favorites_books*
+10. *test_get_list_of_favorites_books*
     - Получает список избранных книг.

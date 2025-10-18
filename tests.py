@@ -31,11 +31,17 @@ class TestBooksCollector:
         assert 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa' not in collector.books_genre
 
 
-    def test_set_and_get_book_genere(self):
+    def test_set_book_genere(self):
         collector = BooksCollector()
         collector.add_new_book('Оно')
         collector.set_book_genre('Оно', 'Ужасы')
-        assert collector.get_book_genre('Оно') == 'Ужасы'
+        assert collector.books_genre['Оно'] == 'Ужасы'
+
+    def test_get_book_genre(self):
+        collector = BooksCollector()
+        collector.books_genre['Оно'] = 'Ужасы'
+        genre = collector.get_book_genre('Оно')
+        assert genre == 'Ужасы'    
 
     def test_get_books_with_specific(self):
         collector = BooksCollector()
@@ -46,7 +52,7 @@ class TestBooksCollector:
     def test_get_books_genre(self):
         collector = BooksCollector()
         collector.add_new_book('Ревизор')
-        assert collector.set_books_genre() == {'Ревизор': 'Комедии'}
+        assert collector.get_books_genre() == {'Ревизор': 'Комедии'}
 
     def get_books_for_children(self):
         collector = BooksCollector()
@@ -61,7 +67,7 @@ class TestBooksCollector:
         collector = BooksCollector()
         collector.add_new_book('Марсианин')
         collector.add_book_in_favorites('Марсианин')
-        assert 'Гамлет' in collector.get_list_of_favorites_books
+        assert 'Гамлет' in collector.get_list_of_favorites_books()
 
     def test_add_duplicate_book_in_favorites(self):
         collector = BooksCollector()
@@ -87,4 +93,4 @@ class TestBooksCollector:
         collector.add_new_book(books)
         collector.set_book_genre(books, genre)
         collector.add_book_in_favorites(books)
-        assert books in collector.get_list_of_favorites_books()
+        assert books in collector.favorites
