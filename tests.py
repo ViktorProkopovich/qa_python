@@ -88,10 +88,10 @@ class TestBooksCollector:
                                                ('Девы', 'Детективы'),
                                                ('Шрэк', 'Мультфильмы'),
                                                ('Ревизор','Комедии')])
-    def test_get_list_of_favorites_books(self, books):
+    def test_get_list_of_favorites_books(self, books, genre):
         collector = BooksCollector()
         collector.add_new_book(books)
+        collector.set_book_genre(books, genre)
         collector.add_book_in_favorites(books)
         favorites = collector.get_list_of_favorites_books()
         assert books in favorites
-ды
