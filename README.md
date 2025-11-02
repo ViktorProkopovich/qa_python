@@ -81,3 +81,5 @@ print(collector.get_list_of_favorites_books())
 
 **Виктор Прокопович**  
 📦 [GitHub — ViktorProkopovich](https://github.com/ViktorProkopovich)
+
+
