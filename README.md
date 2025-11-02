@@ -1,5 +1,13 @@
 # 📚 Проект Sprint_4 — Класс *BooksCollector*
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10+-blue?logo=python" alt="Python">
+  <img src="https://img.shields.io/badge/Pytest-Framework-orange?logo=pytest" alt="Pytest">
+  <img src="https://img.shields.io/badge/Unit%20Tests-100%25-brightgreen" alt="Unit Tests">
+</p>
+
+---
+
 ## 📘 Описание проекта
 
 Проект представляет собой класс **BooksCollector**, который позволяет:
