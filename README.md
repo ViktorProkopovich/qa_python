@@ -77,10 +77,7 @@ print(collector.get_books_genre())
 print(collector.get_list_of_favorites_books())
 # ['Гарри Поттер']
 
-👨‍💻 Автор
+## 👨‍💻 Автор
 
-Виктор Прокопович
-📦 GitHub — ViktorProkopovich
-
-
----
+**Виктор Прокопович**  
+📦 [GitHub — ViktorProkopovich](https://github.com/ViktorProkopovich)
