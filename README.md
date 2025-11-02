@@ -78,6 +78,6 @@ print(collector.get_list_of_favorites_books())
 # ['Гарри Поттер']
 
 
-##👨‍💻 Автор
+👨‍💻 Автор
 Виктор Прокопович
 📦 GitHub — ViktorProkopovich
